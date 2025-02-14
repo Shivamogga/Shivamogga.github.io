@@ -133,7 +133,7 @@ html {
 header {
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg3.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -954,3 +954,13 @@ input[type=radio] {
 }
 
 /* end */
+/*card img*/
+.card-img{
+}
+.para-1-history{
+  margin-bottom: 10px;
+}
+.para-2-history{
+  margin-bottom: 10px;
+
+}

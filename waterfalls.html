@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfalls</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .waterfalls-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card Style */
+        .waterfalls-card {
+            background-color: #fff;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .waterfalls-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Style */
+        .waterfalls-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        /* Content Section */
+        .waterfalls-card-content {
+            padding: 15px;
+        }
+
+        .waterfalls-card-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .waterfalls-card-description {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="waterfalls-card-container">
+        <!-- Jog Falls Card -->
+        <div class="waterfalls-card">
+            <img src="img/jog-falls-01.jpg" alt="Jog Falls" class="waterfalls-card-img">
+            <div class="waterfalls-card-content">
+                <h3 class="waterfalls-card-title">Jog Falls</h3>
+                <p class="waterfalls-card-description">Jog Falls is one of the highest plunge waterfalls in India, offering a breathtaking view and a thrilling trekking experience.</p>
+                <p>Distance:102km</p>
+            </div>
+        </div>
+
+     
+
+        <!-- Barkana Falls Card -->
+        <div class="waterfalls-card">
+            <img src="img/barkana.jpeg" alt="Barkana Falls" class="waterfalls-card-img">
+            <div class="waterfalls-card-content">
+                <h3 class="waterfalls-card-title">Barkana Falls</h3>
+                <p class="waterfalls-card-description">Barkana Falls is among the top ten highest waterfalls in India, offering a stunning view amidst dense forests.</p>
+                <p>Distance:92km</p>
+            </div>
+        </div>
+
+        <!-- Hidlumane Falls Card -->
+        <div class="waterfalls-card">
+            <img src="img/hidlumane.jpeg" alt="Hidlumane Falls" class="waterfalls-card-img">
+            <div class="waterfalls-card-content">
+                <h3 class="waterfalls-card-title">Hidlumane Falls</h3>
+                <p class="waterfalls-card-description">Hidlumane Falls is a series of cascading waterfalls surrounded by the lush greenery of the Western Ghats.</p>
+                <p>Distance:110km</p>
+            </div>
+        </div>
+
+        <!-- Dabbe Falls Card -->
+        <div class="waterfalls-card">
+            <img src="img/dabbe.jpeg" alt="Dabbe Falls" class="waterfalls-card-img">
+            <div class="waterfalls-card-content">
+                <h3 class="waterfalls-card-title">Dabbe Falls</h3>
+                <p class="waterfalls-card-description">Dabbe Falls is a hidden gem in the Western Ghats, known for its pristine beauty and adventurous trek.</p>
+                <p>Distance:71km</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

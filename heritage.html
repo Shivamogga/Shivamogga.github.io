@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical & Cultural Sites</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .heritage-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card Style */
+        .heritage-card {
+            background-color: #fff;
+            width: 300px;
+            min-height: 380px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .heritage-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Style */
+        .heritage-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        /* Content Section */
+        .heritage-card-content {
+            padding: 20px;
+        }
+
+        .heritage-card-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .heritage-card-description {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heritage-card-container">
+        <!-- Shivappa Nayaka Palace Card -->
+        <div class="heritage-card">
+            <img src="img/shivappanayaka-palace.jpeg" alt="Shivappa Nayaka Palace" class="heritage-card-img">
+            <div class="heritage-card-content">
+                <h3 class="heritage-card-title">Shivappa Nayaka Palace</h3>
+                <p class="heritage-card-description">A historical palace built by Shivappa Nayaka, showcasing beautiful architecture and rich cultural heritage.</p>
+                <p>Distance:2km</p>
+            </div>
+        </div>
+
+
+
+        <!-- Kedareshwara Temple Card -->
+        <div class="heritage-card">
+            <img src="img/kedareshwara.jpeg" alt="Kedareshwara Temple" class="heritage-card-img">
+            <div class="heritage-card-content">
+                <h3 class="heritage-card-title">Kedareshwara Temple</h3>
+                <p class="heritage-card-description">A sacred temple dedicated to Lord Shiva, known for its intricate carvings and spiritual significance.</p>
+                <p>Distance:124km</p>
+            </div>
+        </div>
+
+        <!-- Koodli Card -->
+        <div class="heritage-card">
+            <img src="img/koodli.jpeg" alt="Koodli" class="heritage-card-img">
+            <div class="heritage-card-content">
+                <h3 class="heritage-card-title">Koodli</h3>
+                <p class="heritage-card-description">A historic place where the Tunga and Bhadra rivers meet, known for its temples and peaceful ambiance.</p>
+                <p>Distance:16km</p>
+            </div>
+        </div>
+
+        <!-- Mandagadde Bird Sanctuary Card -->
+        <div class="heritage-card">
+            <img src="img/mandgadde.jpeg" alt="Mandagadde Bird Sanctuary" class="heritage-card-img">
+            <div class="heritage-card-content">
+                <h3 class="heritage-card-title">Mandagadde Bird Sanctuary</h3>
+                <p class="heritage-card-description">A paradise for bird watchers, home to a variety of migratory birds amidst lush greenery.</p>
+                <p>Distance:29km</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
