@@ -661,6 +661,12 @@ input[type="submit"]:hover {
   margin-bottom: 20px;
 }
 
+.footer span:nth-last-child(1), 
+.footer span:nth-last-child(2) {
+  text-align: center; /* Center align the last two lines */
+  width: 100%; /* Make them span the full width */
+}
+
 .footer h3 {
   margin-bottom: 10px;
 }
