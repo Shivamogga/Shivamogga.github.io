@@ -36,6 +36,8 @@
             overflow: hidden;
             transition: transform 0.3s ease;
             text-align: center;
+            display: flex; /* Make the card a flex container */
+            flex-direction: column; /* Arrange content vertically */
         }
 
         .waterfalls-card:hover {
@@ -53,6 +55,7 @@
         /* Content Section */
         .waterfalls-card-content {
             padding: 15px;
+            flex-grow: 1; /* Allow content to grow and fill available space */
         }
 
         .waterfalls-card-title {
@@ -68,51 +71,56 @@
             text-align: justify;
             padding: inherit;   
         }
+        .distance-label {
+            background-color: #F7D358; /* Use the chosen yellow color */
+            color: black;
+            padding: 8px 12px;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto; /* Push the label to the bottom */
+        }
     </style>
 </head>
 <body>
 
     <div class="waterfalls-card-container">
-        <!-- Jog Falls Card -->
         <div class="waterfalls-card">
             <img src="img/jog-falls-01.jpg" alt="Jog Falls" class="waterfalls-card-img">
             <div class="waterfalls-card-content">
                 <h3 class="waterfalls-card-title">Jog Falls</h3>
                 <p class="waterfalls-card-description">Jog Falls is one of the highest plunge waterfalls in India, offering a breathtaking view and a thrilling trekking experience.</p>
-                <p>Distance:102km</p>
             </div>
+            <div class="distance-label">Distance: 102km</div> 
         </div>
 
      
 
-        <!-- Barkana Falls Card -->
         <div class="waterfalls-card">
             <img src="img/barkana.jpeg" alt="Barkana Falls" class="waterfalls-card-img">
             <div class="waterfalls-card-content">
                 <h3 class="waterfalls-card-title">Barkana Falls</h3>
                 <p class="waterfalls-card-description">Barkana Falls is among the top ten highest waterfalls in India, offering a stunning view amidst dense forests.</p>
-                <p>Distance:92km</p>
             </div>
+            <div class="distance-label">Distance: 92km</div> 
         </div>
 
-        <!-- Hidlumane Falls Card -->
         <div class="waterfalls-card">
             <img src="img/hidlumane.jpeg" alt="Hidlumane Falls" class="waterfalls-card-img">
             <div class="waterfalls-card-content">
                 <h3 class="waterfalls-card-title">Hidlumane Falls</h3>
                 <p class="waterfalls-card-description">Hidlumane Falls is a series of cascading waterfalls surrounded by the lush greenery of the Western Ghats.</p>
-                <p>Distance:110km</p>
             </div>
+            <div class="distance-label">Distance: 110km</div> 
         </div>
 
-        <!-- Dabbe Falls Card -->
         <div class="waterfalls-card">
             <img src="img/dabbe.jpeg" alt="Dabbe Falls" class="waterfalls-card-img">
             <div class="waterfalls-card-content">
                 <h3 class="waterfalls-card-title">Dabbe Falls</h3>
                 <p class="waterfalls-card-description">Dabbe Falls is a hidden gem in the Western Ghats, known for its pristine beauty and adventurous trek.</p>
-                <p>Distance:71km</p>
             </div>
+            <div class="distance-label">Distance: 71km</div> 
         </div>
     </div>
 

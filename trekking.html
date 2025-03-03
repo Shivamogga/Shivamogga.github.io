@@ -36,6 +36,8 @@
         overflow: hidden;
         transition: transform 0.3s ease;
         text-align: center;
+        display: flex; /* Make the card a flex container */
+        flex-direction: column; /* Arrange content vertically */
       }
 
       .trekking-card:hover {
@@ -53,6 +55,7 @@
       /* Content Section */
       .trekking-card-content {
         padding: 15px;
+        flex-grow: 1; /* Allow content to grow and fill available space */
       }
 
       .trekking-card-title {
@@ -68,11 +71,20 @@
         text-align: justify;
         padding: inherit;
       }
+
+      .distance-label {
+        background-color: #F7D358; /* B0BEC5 */
+        color: black;
+        padding: 8px 12px;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: auto; /* Push the label to the bottom */
+      }
     </style>
   </head>
   <body>
     <div class="trekking-card-container">
-      <!-- Kodchadri Card -->
       <div class="trekking-card">
         <img
           src="img/kodchadri.jpeg"
@@ -86,11 +98,10 @@
             significance. It's a must-visit for nature lovers and trekking
             enthusiasts.
           </p>
-          <p>Distance:104km</p>
         </div>
+        <div class="distance-label">Distance: 104km</div>
       </div>
 
-      <!-- Kundadri Hills Card -->
       <div class="trekking-card">
         <img
           src="img/kundadri.jpeg"
@@ -103,12 +114,10 @@
             Kundadri Hills offers scenic views of the Western Ghats, ideal for
             nature walks and adventure seekers.
           </p>
-          <p>Distance:89km</p>
-
         </div>
+        <div class="distance-label">Distance: 89km</div>
       </div>
 
-      <!-- Agumbe Card -->
       <div class="trekking-card">
         <img src="img/agumbe.jpeg" alt="Agumbe" class="trekking-card-img" />
         <div class="trekking-card-content">
@@ -117,12 +126,10 @@
             Agumbe is a hidden gem for trekkers, with lush greenery and serene
             surroundings that provide a peaceful retreat.
           </p>
-          <p>Distance:92km</p>
-
         </div>
+        <div class="distance-label">Distance: 92km</div>
       </div>
 
-      <!-- Kavaladurga Fort Card -->
       <div class="trekking-card">
         <img
           src="img/kavaledurga.jpeg"
@@ -135,9 +142,8 @@
             Kavaladurga Fort is a historical fort offering both a challenging
             trek and a glimpse into the region's rich heritage.
           </p>
-          <p>Distance:81km</p>
-
         </div>
+        <div class="distance-label">Distance: 81km</div>
       </div>
     </div>
   </body>

@@ -31,12 +31,14 @@
         .heritage-card {
             background-color: #fff;
             width: 300px;
-            min-height: 380px;
+            min-height: 380px; /* Consider removing min-height if not needed */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             transition: transform 0.3s ease;
             text-align: center;
+            display: flex; /* Make the card a flex container */
+            flex-direction: column; /* Arrange content vertically */
         }
 
         .heritage-card:hover {
@@ -54,6 +56,7 @@
         /* Content Section */
         .heritage-card-content {
             padding: 20px;
+            flex-grow: 1;
         }
 
         .heritage-card-title {
@@ -69,51 +72,56 @@
             text-align: justify;
             padding: inherit;
         }
+        .distance-label {
+            background-color: #F7D358; /* Use the chosen yellow color */
+            color: black;
+            padding: 8px 12px;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto; /* Push the label to the bottom */
+        }
     </style>
 </head>
 <body>
 
     <div class="heritage-card-container">
-        <!-- Shivappa Nayaka Palace Card -->
         <div class="heritage-card">
             <img src="img/shivappanayaka-palace.jpeg" alt="Shivappa Nayaka Palace" class="heritage-card-img">
             <div class="heritage-card-content">
                 <h3 class="heritage-card-title">Shivappa Nayaka Palace</h3>
                 <p class="heritage-card-description">A historical palace built by Shivappa Nayaka, showcasing beautiful architecture and rich cultural heritage.</p>
-                <p>Distance:2km</p>
             </div>
+            <div class="distance-label">Distance: 2km</div> 
         </div>
 
 
 
-        <!-- Kedareshwara Temple Card -->
         <div class="heritage-card">
             <img src="img/kedareshwara.jpeg" alt="Kedareshwara Temple" class="heritage-card-img">
             <div class="heritage-card-content">
                 <h3 class="heritage-card-title">Kedareshwara Temple</h3>
                 <p class="heritage-card-description">A sacred temple dedicated to Lord Shiva, known for its intricate carvings and spiritual significance.</p>
-                <p>Distance:124km</p>
             </div>
+            <div class="distance-label">Distance: 124km</div> 
         </div>
 
-        <!-- Koodli Card -->
         <div class="heritage-card">
             <img src="img/koodli.jpeg" alt="Koodli" class="heritage-card-img">
             <div class="heritage-card-content">
                 <h3 class="heritage-card-title">Koodli</h3>
                 <p class="heritage-card-description">A historic place where the Tunga and Bhadra rivers meet, known for its temples and peaceful ambiance.</p>
-                <p>Distance:16km</p>
             </div>
+            <div class="distance-label">Distance: 16km</div> 
         </div>
 
-        <!-- Mandagadde Bird Sanctuary Card -->
         <div class="heritage-card">
             <img src="img/mandgadde.jpeg" alt="Mandagadde Bird Sanctuary" class="heritage-card-img">
             <div class="heritage-card-content">
                 <h3 class="heritage-card-title">Mandagadde Bird Sanctuary</h3>
                 <p class="heritage-card-description">A paradise for bird watchers, home to a variety of migratory birds amidst lush greenery.</p>
-                <p>Distance:29km</p>
             </div>
+            <div class="distance-label">Distance: 29km</div> 
         </div>
     </div>
 
