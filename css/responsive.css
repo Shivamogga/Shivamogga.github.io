@@ -96,7 +96,15 @@
   /*footer*/
   .footer {
     padding: 10px;
+    text-align: left;
+    flex-direction: column;
   }
+
+  .footer .span3 {
+    margin-right: 0;
+    flex: 1 1 100%; /* Take full width on smaller screens */
+  }
+
   .content-col {
     width: 100%;
   }

@@ -641,6 +641,7 @@ input[type="submit"]:hover {
   color: #fc036b;
 }
 
+
 /* footer */
 .footer {
   width: 100%;
@@ -648,32 +649,55 @@ input[type="submit"]:hover {
   padding: 20px 80px;
   margin: 0;
   background: #222;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Align items to the top */
 }
 
-.footer p {
+.footer .span3 {
+  flex: 1 1 30%; /* Adjust flex basis to distribute content */
+  margin-right: 2%; /* Add small margin between columns */
+  margin-bottom: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
   color: whitesmoke;
-  margin: 20px auto;
-  padding: 20px auto;
+  text-decoration: none;
 }
 
 .footer span {
   display: block;
   color: whitesmoke;
-  padding: 20px auto;
+  padding: 5px 0;
 }
 
 .social {
-  width: 360px;
-  margin: 30px auto;
+  width: auto;
+  margin: 10px 0;
+  padding-left: 0;
 }
 
 .social li {
   list-style: none;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .social a {
-  margin-right: 10px;
   font-size: 18px;
   background-color: transparent;
   border-radius: 50%;
