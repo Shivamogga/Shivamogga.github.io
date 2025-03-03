@@ -250,7 +250,7 @@ section {
   color: #7c7c7c;
   padding: 0;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify; 
   max-width: 35ch;
 }
 
@@ -310,7 +310,7 @@ section {
   color: rgb(221, 221, 221);
   max-width: 65ch;
   line-height: 1.5;
-  text-align: left;
+  text-align: justify; /* Justify the paragraph text */
   padding: 0px 35px;
 }
 
