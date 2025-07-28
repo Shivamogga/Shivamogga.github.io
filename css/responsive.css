@@ -4,12 +4,14 @@
     flex-direction: column;
     width: 100%;
   }
+
   form,
   .cbox {
     margin: auto;
     margin-bottom: 30px;
   }
 }
+
 @media screen and (max-width: 1130px) {
   .menu-btn {
     display: block;
@@ -46,30 +48,31 @@
 }
 
 @media screen and (max-width: 1440px) {
-	 .containerx {
-	  top: 40%;
-	  bottom: 40%;
-	  transform-style: preserve-3d;
-	}
-	
-	#about_us div {
-		padding: 10px;
-		display: block;
-		align-items: normal;
-	}
-	
-	.cards {
-		position: relative;
-		width: 90vw;
-		height: 100%;
-	}
-	
-	#about-quad {
-		display: none;
-	}
+  .containerx {
+    top: 40%;
+    bottom: 40%;
+    transform-style: preserve-3d;
+  }
+
+  #about_us div {
+    padding: 10px;
+    display: block;
+    align-items: normal;
+  }
+
+  .cards {
+    position: relative;
+    width: 90vw;
+    height: 100%;
+  }
+
+  #about-quad {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 850px) {
+
   /*events*/
   .row {
     flex-direction: column;
@@ -95,88 +98,679 @@
 
   /*footer*/
   .footer {
-    padding: 10px;
-    text-align: left;
-    flex-direction: column;
+    width: 95%;
+  }
+
+  .footer-content {
+    padding: 15px 20px;
+  }
+
+  .footer-copyright {
+    padding: 10px 20px;
   }
 
   .footer .span3 {
     margin-right: 0;
-    flex: 1 1 100%; /* Take full width on smaller screens */
+    flex: 1 1 100%;
+    /* Take full width on smaller screens */
   }
 
-  .footer span:nth-last-child(1), 
-  .footer span:nth-last-child(2) {
-    text-align: center;
+  .copyright-content {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .content-col {
     width: 100%;
   }
+
   #about_us p {
     width: 70%;
   }
 }
 
-@media screen and (max-width: 770px) {
-  #about_us p {
-    width: 85%;
-    padding-top: 7em;
-    margin: auto;
+/* Index page specific responsive styles */
+@media screen and (max-width: 768px) {
+
+  /* Header adjustments */
+  .header-content {
+    padding: 2rem;
+    margin-bottom: 100px;
   }
-  form,
-  .cbox {
-    width: 90%;
+
+  .header-content h1 {
+    font-size: 5vmin;
   }
-  .ctn {
-    margin: auto;
+
+  .header-content h2 {
+    font-size: 3vmin;
+  }
+
+  /* Events section adjustments */
+  .events {
+    width: 95%;
+  }
+
+  .events .row {
+    gap: 20px;
+  }
+
+  .events .card {
+    height: 320px;
+  }
+
+  .events .card h4 {
+    font-size: 1.1rem;
+    margin: 15px auto;
+  }
+
+  .events .card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 10px 0;
+  }
+
+  /* Explore section adjustments */
+  .explore {
+    width: 95%;
   }
 
   .explore-content {
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
+    padding: 2rem;
   }
 
-  .explore-content .ctn {
-    margin: 40px auto;
+  .explore-content h1 {
+    font-size: 3vmin;
+  }
+
+  .explore-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Tours section adjustments */
+  .tours {
+    width: 95%;
+  }
+
+  .tours .row {
+    gap: 20px;
+  }
+
+  .content-col h1 {
+    font-size: 3vmin;
+  }
+
+  .content-col p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Image gallery adjustments */
+  .image-gallery {
+    gap: 0.3rem 0.3rem;
+    padding: 0.3rem;
+  }
+
+  /* About section adjustments */
+  #about_us {
+    height: 500px;
+  }
+
+  #about_us p {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-top: 10em;
+    margin-left: 2em;
+  }
+
+  /* Contact section adjustments */
+  #contact {
+    width: 95%;
+  }
+
+  .contact_us {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form,
+  .cbox {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cbox {
+    margin-left: 0;
+  }
+
+  /* Contributors section adjustments */
+  .contributors {
+    padding: 3em 1em;
+  }
+
+  .concard {
+    height: 10em;
+    width: 8em;
+  }
+
+  .text h1 {
+    font-size: 18px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  /* Extra small screens */
+
+  /* Header adjustments */
+  .header-content {
+    padding: 1rem;
+    margin-bottom: 80px;
+  }
+
+  .header-content h1 {
+    font-size: 4vmin;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .header-content h2 {
+    font-size: 2.5vmin;
+  }
+
+  /* Events section adjustments */
+  .events .card {
+    height: 300px;
+  }
+
+  .events .card h4 {
+    font-size: 1rem;
+    margin: 12px auto;
+  }
+
+  .events .card p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin: 8px 0;
+  }
+
+  /* Explore section adjustments */
+  .explore-content {
+    padding: 1.5rem;
+  }
+
+  .explore-content h1 {
+    font-size: 6vmin;
+  }
+
+  .explore-content p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  /* Tours section adjustments */
+  .content-col h1 {
+    font-size: 8.5vmin;
+  }
+
+  .content-col p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  /* Image gallery adjustments */
+  .image-gallery {
+    gap: 0.2rem 0.2rem;
+    padding: 0.2rem;
+  }
+
+  /* About section adjustments */
+  #about_us {
+    height: 450px;
+  }
+
+  #about_us p {
+    width: 95%;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    padding-top: 8em;
+    margin-left: 1em;
+  }
+
+  /* Contact section adjustments */
+  .contact_us {
+    gap: 20px;
+  }
+
+  .c_boxx a {
+    font-size: 0.9em;
+    padding: 0.8em;
+  }
+
+  .c_boxx a p {
+    font-size: 0.9em;
+  }
+
+  /* Contributors section adjustments */
+  .contributors {
+    padding: 2em 0.5em;
+  }
+
+  .concard {
+    height: 9em;
+    width: 7em;
+    margin: 1em 0.3em;
+  }
+
+  .text h1 {
+    font-size: 16px;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+    padding: 10px 15px;
+  }
+
+  .footer-copyright {
+    padding: 8px 15px;
+  }
+
+  .footer .span3 {
+    margin-bottom: 15px;
+  }
+
+  .footer ul li {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+  }
+
+  .footer .headline h2 {
+    font-size: 0.7rem;
+  }
+}
+
+/* Individual page responsive styles */
+@media screen and (max-width: 768px) {
+  /* Trekking, Waterfalls, Heritage, Wildlife, Dams, Religious, Adventure, Nature pages */
+
+  /* Top bar adjustments */
+  .top-bar {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .back-button {
+    align-self: flex-start;
+  }
+
+  /* Card container adjustments */
+  .trekking-card-container,
+  .waterfall-card-container,
+  .heritage-card-container,
+  .wildlife-card-container,
+  .dam-card-container,
+  .religious-card-container,
+  .adventure-card-container,
+  .nature-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 15px;
+  }
+
+  /* Card adjustments */
+  .trekking-card,
+  .waterfall-card,
+  .heritage-card,
+  .wildlife-card,
+  .dam-card,
+  .religious-card,
+  .adventure-card,
+  .nature-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  /* Card content adjustments */
+  .trekking-card-content,
+  .waterfall-card-content,
+  .heritage-card-content,
+  .wildlife-card-content,
+  .dam-card-content,
+  .religious-card-content,
+  .adventure-card-content,
+  .nature-card-content {
+    padding: 15px;
+  }
+
+  .trekking-card-title,
+  .waterfall-card-title,
+  .heritage-card-title,
+  .wildlife-card-title,
+  .dam-card-title,
+  .religious-card-title,
+  .adventure-card-title,
+  .nature-card-title {
+    font-size: 1.3em;
+  }
+
+  .trekking-card-description,
+  .waterfall-card-description,
+  .heritage-card-description,
+  .wildlife-card-description,
+  .dam-card-description,
+  .religious-card-description,
+  .adventure-card-description,
+  .nature-card-description {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  /* Image adjustments */
+  .trekking-card-img,
+  .waterfall-card-img,
+  .heritage-card-img,
+  .wildlife-card-img,
+  .dam-card-img,
+  .religious-card-img,
+  .adventure-card-img,
+  .nature-card-img {
+    height: 180px;
+  }
+
+  /* Distance label adjustments */
+  .distance-label {
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  /* Dark mode toggle adjustments */
+  .label {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Extra small screens */
+
+  /* Top bar adjustments */
+  .top-bar {
+    padding: 0 10px;
+  }
+
+  .back-button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  /* Card container adjustments */
+  .trekking-card-container,
+  .waterfall-card-container,
+  .heritage-card-container,
+  .wildlife-card-container,
+  .dam-card-container,
+  .religious-card-container,
+  .adventure-card-container,
+  .nature-card-container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  /* Card adjustments */
+  .trekking-card,
+  .waterfall-card,
+  .heritage-card,
+  .wildlife-card,
+  .dam-card,
+  .religious-card,
+  .adventure-card,
+  .nature-card {
+    max-width: 100%;
+  }
+
+  /* Card content adjustments */
+  .trekking-card-content,
+  .waterfall-card-content,
+  .heritage-card-content,
+  .wildlife-card-content,
+  .dam-card-content,
+  .religious-card-content,
+  .adventure-card-content,
+  .nature-card-content {
+    padding: 12px;
+  }
+
+  .trekking-card-title,
+  .waterfall-card-title,
+  .heritage-card-title,
+  .wildlife-card-title,
+  .dam-card-title,
+  .religious-card-title,
+  .adventure-card-title,
+  .nature-card-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .trekking-card-description,
+  .waterfall-card-description,
+  .heritage-card-description,
+  .wildlife-card-description,
+  .dam-card-description,
+  .religious-card-description,
+  .adventure-card-description,
+  .nature-card-description {
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+
+  /* Image adjustments */
+  .trekking-card-img,
+  .waterfall-card-img,
+  .heritage-card-img,
+  .wildlife-card-img,
+  .dam-card-img,
+  .religious-card-img,
+  .adventure-card-img,
+  .nature-card-img {
+    height: 160px;
+  }
+
+  /* Distance label adjustments */
+  .distance-label {
+    font-size: 0.8em;
+    padding: 5px 8px;
+  }
+
+  /* Dark mode toggle adjustments */
+  .label {
+    transform: scale(1.1);
+  }
+}
+
 @media screen and (max-width: 600px) {
   #about_us p {
     margin: auto;
   }
 }
+
 @media screen and (max-width: 470px) {
   .ctn {
     padding: 13px 25px;
   }
+
   .c_boxx a p {
     font-size: 17.5px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .ctn {
     padding: 13px 25px;
   }
+
   .c_boxx a p {
     font-size: 16px;
   }
-}
 
-@media (max-width: 850px) {
   .content-col {
-    text-align: center;
+    width: 100%;
   }
+
   .content-col .line {
     margin: 0.5rem auto;
   }
+
   .content-col .ctn {
     margin: 0 auto;
     position: inherit;
   }
+
   .content-col p {
     max-width: 75%;
     text-align: justify;
+  }
+}
+
+/* Responsive styles for modern explore cards */
+@media screen and (max-width: 1024px) {
+  .explore-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explore-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  /* Tablet spacing fixes */
+  .content-col h1 {
+    font-size: calc(1.8rem + 0.5vw);
+    margin-bottom: 4px;
+  }
+
+  .content-col .line {
+    margin-bottom: 12px;
+  }
+
+  .content-col p {
+    margin: 6px 0;
+    line-height: 1.3;
+    font-size: 0.95rem;
+  }
+
+  .tours .row {
+    gap: 1.5rem;
+    margin-top: 25px;
+  }
+
+  .tours {
+    margin: 20px auto;
+  }
+
+  .explore-card {
+    max-width: 100%;
+  }
+
+  .card-content {
+    padding: 1.2rem;
+    height: auto;
+    min-height: 180px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-button {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .explore-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* Mobile spacing fixes for content sections */
+  .content-col h1 {
+    font-size: calc(1.5rem + 0.5vw);
+    margin-bottom: 3px;
+  }
+
+  .content-col .line {
+    margin-bottom: 8px;
+  }
+
+  .content-col p {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-size: 0.9rem;
+  }
+
+  .tours .row {
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .tours {
+    margin: 15px auto;
+  }
+
+  /* Mobile tours layout */
+  .tours .container.row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tours .content-col {
+    order: 1;
+    padding: 0 1rem;
+  }
+
+  .tours .image-col {
+    order: 2;
+  }
+
+  .tours .image-gallery {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+    min-height: 160px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
   }
 }
